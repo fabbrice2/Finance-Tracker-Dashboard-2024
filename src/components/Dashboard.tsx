@@ -1,7 +1,6 @@
-import React from 'react';
-
 import Card from './Card';
 import Category from './Category';
+import RecentExpenses from './RecentExpenses';
 
 export default function Dashboard() {
   return (
@@ -25,6 +24,8 @@ export default function Dashboard() {
           <Category name="Others" allocated={1200} spent={890} />
         </div>
       </div>
+
+      <RecentExpenses />
     </div>
   );
 }
